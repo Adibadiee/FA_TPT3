@@ -1,0 +1,23 @@
+# Ignore build outputs
+/build/
+*.aux
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.gz
+*.synctex.gz
+*.lof
+*.lot
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/

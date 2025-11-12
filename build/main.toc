@@ -1,0 +1,5 @@
+\babel@toc {german}{}\relax 
+\contentsline {paragraph}{\nonumberline Gender-Hinweis}{2}{paragraph*.2}%
+\contentsline {paragraph}{\nonumberline Sperrvermerk}{3}{paragraph*.4}%
+\contentsline {section}{\nonumberline Abbildungsverzeichnis}{ii}{section*.6}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

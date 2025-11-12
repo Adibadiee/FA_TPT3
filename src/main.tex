@@ -1,0 +1,118 @@
+% !TEX program = lualatex --shell-escape
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[listof=toc, 12pt]{scrartcl}
+\usepackage[german]{babel}
+\usepackage[a4paper, includefoot, footskip=1.5em, margin=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[style=authoryear, sorting=nyt]{biblatex}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{sectsty}
+\usepackage{fixme}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{subcaption}
+\usepackage{makecell}
+\usepackage{pdfpages}
+\usepackage{scrlayer-scrpage}
+\usepackage[toc, acronyms]{glossaries}
+
+\fxsetup{status=draft}
+
+%pagenumber on right
+\rofoot*{\pagemark}
+\cofoot*{}
+
+\renewcommand\multicitedelim{\space{}und\space}
+%\addbibresource{main.bib}
+%\loadglsentries[acronyms]{acronyms}
+\makeglossaries
+
+\setstretch{1.5}
+
+\allsectionsfont{\fontsize{12}{18}\selectfont}
+\sectionfont{\fontsize{14}{21}\selectfont}
+
+\setlength{\intextsep}{0pt}
+
+\graphicspath{{Images}}
+
+\hypersetup{hidelinks}
+
+\renewcommand{\footnotesize}{\fontsize{10pt}{10pt}\selectfont}
+
+% \newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+\newcommand{\rz}[1]{\glqq{}#1\grqq{}}
+
+
+\definecolor{BA_Blau}{RGB}{67, 207, 255}
+
+
+\begin{document}
+\pagestyle{empty}
+
+
+\begin{center}{
+        \setstretch{0.9}
+        {
+            \color{BA_Blau}
+            \fontsize{38pt}{46pt}\selectfont % Prüfen ob lineskip korrekt
+            Fachpraktische Dokumentation zur Bachelor Thesis mit dem vorläufigem Thema: (THEMA) \\
+            \vspace{10pt}
+        }
+        \vspace{72.8pt} %18pt+8pt+3*1.2*13pt
+        \setstretch{1.2}
+        {
+            \fontsize{14pt}{16.8pt}\selectfont
+            Gruppen-Mitglieder (Matrikelnummern):\\
+            Aditi Burte   - 231232\\
+            ~\\
+        }
+        \vspace{78pt} %13pt*5*1.2
+        {
+            \fontsize{14pt}{16.8pt}\selectfont
+            Diese fachpraktische Dokumentation wurde erstellt im Rahmen der\\
+            \textbf{Theorie-Praxis-Anwendung III}\\
+            \vspace{15.6pt} %13pt * 1.2
+            Anzahl der Wörter: \\
+            \vspace{15.6pt}
+            \textbf{Datum: }
+        }
+    }
+\end{center}
+\setlength{\intextsep}{12.0pt plus 2.0pt minus 2.0pt}
+\newpage
+\paragraph{Gender-Hinweis}~\\
+In der vorliegenden Ausarbeitung wird darauf verzichtet, bei Personenbezeichnungen sowohl die männliche als auch die weibliche Form zu nennen. Die männliche Form gilt in allen Fällen, in denen dies nicht explizit ausgeschlossen wird, für alle Geschlechter.
+\newpage
+\paragraph{Sperrvermerk}~\\
+Die vorliegende Fachpraktische Ausarbeitung beinhaltet interne vertrauliche
+Informationen der DB Systel GmbH. Die Weitergabe des Inhaltes dieser Arbeit und eventuell beiliegender
+Abbildungen, Tabellen und Daten im Gesamten oder in Teilen ist grundsätzlich untersagt. Es dürfen
+keinerlei Kopien oder Abschriften, auch nicht in digitaler Form, gefertigt werden. Ausnahmen bedürfen
+der schriftlichen Genehmigung durch die DB Systel GmbH.
+\newpage
+
+\pagestyle{plain}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\printglossary[nonumberlist, type=\acronymtype, title=Abkürzungsverzeichnis]
+\newpage
+\newcounter{roman_page_counter}
+\setcounter{roman_page_counter}{\value{page}}
+\pagenumbering{arabic}
+\newpage
+\appendix
+\renewcommand{\thesection}{A\arabic{section}}
+\pagenumbering{roman}
+\setcounter{page}{\value{roman_page_counter}}
+\printbibliography[heading=bibintoc]
+
+\end{document}
