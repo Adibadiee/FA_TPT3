@@ -48,7 +48,7 @@
 \newcommand{\rz}[1]{\glqq{}#1\grqq{}}
 
 
-\definecolor{BA_Blau}{RGB}{67, 207, 255}
+\definecolor{BA_Blau}{RGB}{0, 0, 148}
 
 
 \begin{document}
@@ -67,7 +67,7 @@
         \setstretch{1.2}
         {
             \fontsize{14pt}{16.8pt}\selectfont
-            Gruppen-Mitglieder (Matrikelnummern):\\
+            Name  (Matrikelnummern):\\
             Aditi Burte   - 231232\\
             ~\\
         }
@@ -79,7 +79,7 @@
             \vspace{15.6pt} %13pt * 1.2
             Anzahl der Wörter: \\
             \vspace{15.6pt}
-            \textbf{Datum: }
+            \textbf{Datum: 02.Dezember 2025 }
         }
     }
 \end{center}
@@ -114,24 +114,18 @@ der schriftlichen Genehmigung durch die DB Systel GmbH.
 Dashboard-Tools haben sich als zentrale Elemente der modernen Business Intelligence etabliert. Sie transformieren komplexe Daten in visuell zugängliche und interaktive Erkenntnisse, die fundierte Entscheidungen auf allen Unternehmensebenen ermöglichen. Eine effektive und effiziente Datenvisualisierung ist somit nicht nur ein technisches Hilfsmittel, sondern ein strategischer Wettbewerbsfaktor, der Agilität und datengesteuerte Prozesse fördert.
 
 \subsection{Problemidentifikation}~\\ 
-Im Rahmen meiner letzten Praxisphasen bei der DB Systel GmbH, ergab sich eine vertiefte Auseinandersetzung mit der Thematik der Datenvisualisierung. Dabei hatte ich die Gelegenheit verschiedene Tools wie Power BI, Tableau sowie Programmierbibliotheken wie Matplotlib, Pandas und HvPlot kennenzulernen. Hierbei fiel mir auf, dass innerhalb des Unternehmens keine einheitliche Vorgehensweise für die Auswahl der Tools existiert jedoch nicht, wodurch die Entscheidungsprozesse uneinheitlich und schwer nachvollziehbar sind. Daraus ergibt sich die Frage, wie sich dieser Auswahlprozess strukturieren lässt, um eine fundierte vergleichbare Entscheidung zu ermöglichen. \\
+Im Rahmen meiner letzten Praxisphasen bei der DB Systel GmbH, ergab sich eine vertiefte Auseinandersetzung mit der Thematik der Datenvisualisierung. Dabei hatte ich die Gelegenheit verschiedene Tools wie Power BI, Tableau sowie Programmierbibliotheken wie Matplotlib, Pandas und HvPlot kennenzulernen. Hierbei fiel mir auf, dass innerhalb des Unternehmens keine einheitliche Vorgehensweise für die Auswahl der Tools existiert jedoch nicht, wodurch die Entscheidungsprozesse uneinheitlich und schwer nachvollziehbar sind. Daraus ergibt sich die Frage, wie sich dieser Auswahlprozess strukturieren lässt, um eine fundierte vergleichbare Entscheidung zu ermöglichen.\\
 
-\subsection{Problembeschreibung}~ \\
-Das zentrale Problem liegt in einem dezentralen und intransparenten Entscheidungsprozess zur Auswahl von Dashboard-Tools bei der DB Systel GmbH. Im Rahmen der Modul GPM hatten wir uns thematisch mit Entscheidungsprozessen auseinandergesetzt. Darunter ist die Herangehensweise der aufeinander bauende Entscheidung zu verstehen. Da es keine unternehmensweite Abstimmung oder zentrale Wissensbasis existiert, treffen die einzelnen Teams ihre Entscheidungen unabhängig voneinander. Diese isolierte Vorgehensweise führt zu einer heterogenen Ausgangslage, in der verschiedene Teams mit unterschiedlichen technischen Voraussetzungen und Toolsets starten. Eine strategische Gesamtperspektive fehlt, sodass Entscheidungen oft nicht auf objektiv vergleichbaren Kriterien oder bestehenden Erfahrungen basieren.
-
-
-Die Folge ist, dass Teams ihre Entwicklungen teilweise mit Tools beginnen, die sich im weiteren Verlauf als ungeeignet erweisen – beispielsweise, weil sie Einschränkungen bei Performance, Datenverarbeitung in Echtzeit oder Visualisierungsmöglichkeiten aufweisen. Diese fehlende Vergleichsgrundlage bei der Toolauswahl trägt unmittelbar zur Entstehung einer fragmentierten und ineffizienten Tool-Landschaft bei. Zusätzlich dazu werden ähnliche Dashboards parallel in unterschiedlichen Systemen erstellt, was doppelte Entwicklungsarbeit verursacht und darüber hinaus zu voneinander abweichenden Darstellungen derselben Kennzahlen führt.
-
-
+\subsection{Problembeschreibung}~\\
+Das zentrale Problem liegt in einem dezentralen und intransparenten Entscheidungsprozess zur Auswahl von Dashboard-Tools bei der DB Systel GmbH. Im Rahmen der Modul Geschäftsprozess Managements hatten wir uns thematisch mit Entscheidungsprozessen auseinandergesetzt. Damit ist einen strukturierten Ablauf gemeint, bei der auf Basis von klaren Kriterien und vorhandenen Informationen schrittweise Entscheidungen getroffen werden. Letztendlich ermöglicht das zu einer zielgerichtete und ideale Lösung. Da es keine unternehmensweite Abstimmung oder zentrale Wissensbasis existiert, treffen die einzelnen Teams ihre Entscheidungen unabhängig voneinander. Diese isolierte Vorgehensweise führt zu einer heterogenen Ausgangslage, in der verschiedene Teams mit unterschiedlichen technischen Voraussetzungen und Toolsets starten. Eine strategische Gesamtperspektive fehlt, sodass Entscheidungen oft nicht auf objektiv vergleichbaren Kriterien oder bestehenden Erfahrungen basieren. Die Folge ist, dass Teams ihre Entwicklungen teilweise mit Tools beginnen, die sich im weiteren Verlauf als ungeeignet erweisen beispielsweise, weil sie Einschränkungen bei Performance, Datenverarbeitung in Echtzeit oder Visualisierungsmöglichkeiten aufweisen. Diese fehlende Vergleichsgrundlage bei der Toolauswahl trägt unmittelbar zur Entstehung einer fragmentierten und ineffizienten Tool-Landschaft bei. Zusätzlich dazu werden ähnliche Dashboards parallel in unterschiedlichen Systemen erstellt, was doppelte Entwicklungsarbeit verursacht und darüber hinaus zu voneinander abweichenden Darstellungen derselben Kennzahlen führt.
 Diese Inkonsistenzen erschweren nicht nur die Vergleichbarkeit der Ergebnisse, sondern erhöhen auch den Abstimmungs- und Wartungsaufwand zwischen den Teams. Langfristig entsteht dadurch ein ineffizienter Ressourceneinsatz mit hohen Kosten für Entwicklung, Pflege und Schulung. Zudem wird der Wissenstransfer behindert, da Erfahrungen aufgrund der unterschiedlichen Technologien kaum geteilt werden können. Ein unternehmensweiter, standardisierter Bewertungsrahmen könnte hier Abhilfe schaffen, indem er den Entscheidungsprozess strukturiert, Vergleichbarkeit ermöglicht und vorhandenes Wissen systematisch nutzbar macht.
 \\
 
-\subsection{Vorgehensweise und Maßnahmen}~ \\ 
+\subsection{Vorgehensweise und Maßnahmen}~\\ 
 Zusammenfassend lässt sich sagen, dass der unstrukturierte Entscheidungsprozess negative Auswirkungen auf die DB Systel GmbH hat.
-Um dieses Problem zu lösen könnte man eine strukturierte, Bewertungsrahmen spezifisch für die Systel entwickeln. Außerdem ist es notwendig ein mehrstufiges Verfahren zu folgen in dem. In einem ersten Schritt werden durch Literaturrecherchen sowie Gespräche mit internen Fachbereichen relevante funktionale und nicht-funktionale Kriterien ermittelt, um sie nachher thematisch zu ordnen und gewichten zu können. Diese dienen als Grundlage für einen einheitlichen Kriterienkatalog zur Bewertung von Dashboard-Tools. 
-
-Masßnahmen: Anregung zur Zusammenarbeit zwischen den Teams, so dass der Austausch zwischen den teams 
-In der letzten Phase wird der Katalog auf ausgewählte Tools angewendet. Das Ergebnis dieser Arbeit ist eine Bewertungsmatrix, die eine transparente und objektive Entscheidungsgrundlage für zukünftige Projektauswahlen bietet. Sie sollte einen welches Tool für welchen Use-Case am besten geeignet ist.\\
+Zur Lösung des identifizierten Problems wird die Entwicklung eines standardisierten Bewertungsrahmens vorgeschlagen. Außerdem ist es notwendig ein mehrstufiges Verfahren zu folgen. Hierfür wird Schrittweise durch Literaturrecherchen sowie Gespräche mit internen Fachbereichen relevante funktionale und nicht-funktionale Kriterien ermittelt, um sie nachher thematisch zu ordnen und gewichten zu können. Diese dienen als Grundlage für einen einheitlichen Kriterienkatalog zur Bewertung von Dashboard-Tools. 
+Aufbauend auf diesem Rahmen werden konkrete Maßnahmen zur Implementierung empfohlen. Erstens soll der Bewertungsrahmen ein integrierter Teil der sogenannten Starter-Packs für alle neuen Dashboard Entwicklungen werden.Zweitens sollte die Einführung der regelmäßigen, formatierter Austauschformate wie Community-Treffen angeregt werden um neue und innovative Perspektive zu gewinnen.
+\\
 \renewcommand{\thesection}{A\arabic{section}}
 \pagenumbering{roman}
 \setcounter{page}{\value{roman_page_counter}}
