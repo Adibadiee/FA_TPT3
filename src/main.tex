@@ -87,18 +87,14 @@
 \end{center}
 \setlength{\intextsep}{12.0pt plus 2.0pt minus 2.0pt}
 \newpage
-\paragraph{Eidesstattliche Erklärung}~\\
-Hiermit erkläre ich, dass ich die vorliegende fachpraktische Ausarbeitung selbständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt und die aus fremden Quellen direkt oder indirekt übernommenen Gedanken als solche kenntlich gemacht habe. Die Arbeit oder Teile hieraus wurde und wird keiner anderen Stelle oder anderen Person im Rahmen einer Prüfung vorgelegt. Ich versichere zudem, dass keine sachliche Übereinstimmung mit einer im Rahmen eines vorangegangenen Studiums angefertigten Seminar-, Haus-, Diplom- oder Abschlussarbeit sowie Bachelor-Thesis besteht.
-\newpage
-
 \pagestyle{plain}
 \pagenumbering{roman}
 \setcounter{page}{1}
-\newpage
-\printglossary[nonumberlist, type=\acronymtype, title=Abkürzungsverzeichnis]
 \newcounter{roman_page_counter}
 \setcounter{roman_page_counter}{\value{page}}
 \pagenumbering{arabic}
+\newpage
+\printglossary[nonumberlist, type=\acronymtype, title=Abkürzungsverzeichnis]
 \section{Einleitung}
 Dashboard-Tools haben sich als zentrale Elemente der modernen Business Intelligence etabliert. Sie transformieren komplexe Daten in Visualisierungen und interaktive Erkenntnisse, die fundierte Entscheidungen auf allen Unternehmensebenen ermöglichen. Eine effektive und effiziente Datenvisualisierung ist nicht nur ein technisches Hilfsmittel, sondern fördert auch Agilität und datengesteuerte Prozesse.
 
@@ -115,10 +111,14 @@ Zur Lösung des identifizierten Problems wird die Entwicklung eines standardisie
 Aufbauend auf diesem Rahmen werden konkrete Maßnahmen zur Implementierung empfohlen. Zunächst soll der Bewertungsrahmen ein integrierter Teil der sogenannten Starter-Packs für alle neuen Dashboard Entwicklungen werden. Zweitens sollte man regelmäßige Austauschformate wie Community-Treffen einführen, um neue und innovative Perspektiven zu gewinnen.
 \newpage
 \appendix
-
 \renewcommand{\thesection}{A\arabic{section}}
 \pagenumbering{roman}
 \setcounter{page}{\value{roman_page_counter}}
 \printbibliography[heading=bibintoc]
+\pagestyle{empty}
+\paragraph{Eidesstattliche Erklärung}~\\
+Hiermit erkläre ich, dass ich die vorliegende fachpraktische Ausarbeitung selbständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt und die aus fremden Quellen direkt oder indirekt übernommenen Gedanken als solche kenntlich gemacht habe. Die Arbeit oder Teile hieraus wurde und wird keiner anderen Stelle oder anderen Person im Rahmen einer Prüfung vorgelegt. Ich versichere zudem, dass keine sachliche Übereinstimmung mit einer im Rahmen eines vorangegangenen Studiums angefertigten Seminar-, Haus-, Diplom- oder Abschlussarbeit sowie Bachelor-Thesis besteht.
+\newpage
+
 
 \end{document}
